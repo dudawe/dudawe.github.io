@@ -5,6 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Сайт веб студії "Web-DECO"</title>
+	
+<script src="js/clock1.js"></script>
+<script type="text/javascript">
+function send()
+
+{    var valid = true;
+
+    var elems = document.forms[0].elements;
+
+    for(var i=0; i < document.forms[0].length; i++){
+        if( elems[i].getAttribute('type') == 'text' ||
+            elems[i].getAttribute('type') == 'password' ||
+            elems[i].getAttribute('type') == 'email' ) {
+            if(elems[i].value == '') {
+                elems[i].style.border = '2px solid red';
+                valid = false;
+            }
+        }
+    }
+
+    if(!valid) {
+
+        alert('Заповніть всі поля !!!');
+
+        return false;
+    }
+}
+</script>
 	<style>
 			.shadowtext {
 				text-shadow: 1px 3px 2px white, 0 0 1em red;
@@ -18,7 +46,7 @@
 		<tr>
 				<td background="images/bg-3.jpg" colspan="2" height="150" align="right">
 					<img src="images/logo.png" height="75" width="140" align="left">	
-					<font color="Maroon"><h1 class="shadowtext">Dudawe </h1></font>
+					<font color="Maroon"><h1 class="shadowtext">Сайт WEB-студії "Dudawe" </h1></font>
 				</td>
 				</tr>
 				<tr>
